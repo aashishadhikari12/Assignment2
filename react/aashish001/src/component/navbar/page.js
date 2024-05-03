@@ -3,15 +3,15 @@ import {Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, Button} from "@nex
 import Logo from "./logo";
 
 const CustomNavbar=(props)=> {
-  console.log(props)
+  
   return (
     <Navbar>
       <NavbarBrand>
-        {props.chocolate}
-        <Logo/>
-        {/* <p className="font-bold text-inherit"><logo/></p> */}
+        
+        <Logo chocolate="kitkat"/>
+        {/*<p className="font-bold text-inherit"><logo/></p> */}
       </NavbarBrand>
-      <NavbarContent className="hidden sm:flex gap-4" justify="center">
+      <NavbarContent className="sm:flex gap-4" justify="center">
         <NavbarItem>
           <Link color="foreground" href="#">
             Features
@@ -30,7 +30,7 @@ const CustomNavbar=(props)=> {
       </NavbarContent>
       <NavbarContent justify="end">
         <NavbarItem className="hidden lg:flex">
-          <Link href="#">Login</Link>
+          <Link href="/login">Login</Link>
         </NavbarItem>
         <NavbarItem>
           <Button as={Link} color="primary" href="#" variant="flat">
